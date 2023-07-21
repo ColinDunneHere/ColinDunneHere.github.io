@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Colin Dunne</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="grid2">
+    <section class="mobileHeaderGrid">
+      <section class="mobileLogo">
+        <a href="index.html"><img
+            src="img/logotype_horizontal.svg"
+            alt="Logo innitials 'CD' with name 'colin dunne' below it"
+            id="mobileLogoImg"
+          /></a>
+      </section>
+      <div class="wrapper">
+  <div class="hamburger-menu-button" onclick="toggleMenu()">
+      <div class="hamburger-menu"> 
+  </div>
+</div>
+      </section>
+
+      <section id="mobileNav">
+        <img src="img/mobilevector.svg" class="mobilevector"/>
+        <nav id="mobileNavItems">
+        <a href="index.html">Design</a>
+        <a href="illustration.html">Illustration</a>
+        <a href="about.html" class="navactive">About</a>
+        <a href="contact.html">Contact</a>
+        </nav>
+        
+    </section>
+    
+    
+    <!--Header/left nav bar-->
+    <nav class="one">
+      <section>
+        <a href="index.html"
+          ><img
+            src="img/logotype.svg"
+            alt="Logo innitials 'CD' with name 'colin dunne' below it"
+        /></a>
+      </section>
+
+      <section class="navsection">
+        <a href="index.html">Design</a>
+        <a href="illustration.html">Illustration</a>
+        <a href="about.html" class="navactive">About</a>
+        <a href="contact.html">Contact</a>
+      </section>
+    </nav>
+
+    <div class="menu">
+      <nav class="menu__nav">
+        <section class="navsectionB">
+          <a href="index.html">Design</a>
+          <a href="illustration.html">Illustration</a>
+          <a href="about.html" class="navactive">About</a>
+          <a href="contact.html">Contact</a>
+        </section>
+        
+      </nav>
+      <button class="menu__toggle r-button" type="button">
+        <span class="menu__hamburger m-hamburger">
+          <span class="m-hamburger__label">
+            <span class="menu__toggle-hint screen-reader">Open menu</span>
+          </span>
+        </span>
+      </button>
+    </div>
+
+    <!--Biline & full bio-->
+    <section class="twoAB">
+      <section class="aboutimgMobile">
+        <img src="img/port.png" id="aboutimg" />
+      </section>
+      <section>
+        <h2 id="abouth2">SF rooted artist & designer.</h2>
+        <h3 id="abouth3">
+          Specialist in UX, UI, illustration, & "cool shtuff"
+        </h3>
+      </section>
+      <section>
+        <p>
+          My name is Colin Dunne. I am rooted in San Francisco where I am
+          studying design and computer science at the University of San
+          Francisco, where I also work as a Lab Assistant. I cast a wide range
+          of various experience in the visual arts. From digital and web design
+          to tattooing and illustration: I love the act and process of creating-
+          the ability to not only seek inspiration from anything and everything,
+          but to make something of it.
+        </p>
+        <p>
+          I believe my first true experience with art wasn’t in a museum or in
+          any classroom, it was with my Mother’s photography. Particularly, it
+          was when I saw the tears of one of the people she had taken a photo
+          of. This person was a family friend of ours. She was crying over
+          family photos my Mom took photos for them, photos that included the
+          family’s husband who succumbed to cancer soon after the shoot. The
+          wife told my Mom that the photos were not only a preservation of who
+          he really was, but a tool of reflection to see how their son would
+          grow up to look so much like him.
+        </p>
+        <p>
+          Anyone can push a button to take a photo, pick up a pencil to draw, or
+          put words on a page. It is the artist, designer, or creator that
+          imbues this content with feeling. With the world flowing between our
+          fingertips, artists have the ability to grasp. Whether it is done
+          through art or more literal forms with UX and web design, I strive to
+          make my work reflect my inspiration and my intent for the viewer.
+        </p>
+      </section>
+    </section>
+
+    <!--Self Portrait-->
+    <section class="threeAB">
+      <section class="aboutimg">
+        <img src="img/port.png" id="aboutimg" />
+      </section>
+    </section>
+    <section class="aboutC">
+      <svg
+        width="902"
+        height="902"
+        viewBox="0 0 902 902"
+        fill="rgb(55,2,74)"
+        xmlns="http://www.w3.org/2000/svg"
+        id="aboutC"
+      >
+        <path
+          id="Vector"
+          d="M296.022 451C296.022 365.409 365.419 296.004 451 296.004C536.581 296.004 605.978 365.409 605.978 451H902C901.893 201.945 700.025 0 450.946 0C201.868 0 0 201.945 0 451C0 700.055 201.921 902 450.946 902V605.942C365.366 605.942 295.969 536.537 295.969 450.946L296.022 451Z"
+        />
+      </svg>
+    </section>
+
+    <!--Footer-->
+    <section class="eight">
+      <img src="img/footvector.svg" class="footvector" />
+      <footer>
+        <section class="footer">
+          <!--Source: https://stackoverflow.com/questions/18813299/changing-image-on-hover-with-css-html by kurdt's -->
+          <a href="https://www.linkedin.com/in/colin-dunne/" target="_blank"
+            ><img
+              src="img/linkedinlogo.svg"
+              onmouseover="this.src='img/activelinkedinlogo.svg';"
+              onmouseout="this.src='img/linkedinlogo.svg';"
+              alt="link to my LinkedIn profile"
+              id="linkedInLogo"
+          /></a>
+          <!--Source: https://www.rapidtables.com/web/html/mailto.html-->
+          <a href="mailto:cpdunne@dons.usfca.edu" id="email">cpdunne@dons.usfca.edu</a>
+        </section>
+        <section class="footercopyright">
+          <p class="footertxtsize">
+            Copyright © 2023 ColinDunne. All Rights Reserved
+          </p>
+        </section>
+      </footer>
+    </section>
+    <script src="js/about.js" async defer></script>
+  </body>
+</html>
