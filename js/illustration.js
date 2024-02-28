@@ -38,6 +38,18 @@ window.addEventListener("optimizedScroll", function () {
   rotatingC.style.fill = `rgb(${r},${g},${b})`;
 });
 
+//window.addEventListener("optimizedScroll", function () {
+//  rotatingC.style.transform = "rotate(" + window.pageYOffset / 2.002 + "deg)";
+//  var a = (((window.scrollY || window.pageYOffset) * 2) / 2500) ** -2 + 9.5;
+//  var c = (((window.scrollY || window.pageYOffset) * 4) / 3500) ** -2 + 2;
+//  var [r, g, b] = [
+//    red - Math.abs(red / a),
+//    green,
+//    blue - Math.abs(blue / c),
+//  ].map(Math.round);
+//  rotatingC.style.fill = `rgb(${r},${g},${b})`;
+//});
+
 var img2overlay;
 
 function on(image) {
@@ -81,33 +93,10 @@ function closeBurguh() {
   document.getElementById("mobileNavItems").style.display = "none";
 }
 
-function illusLoad() {
-  document.getElementById("mobileNav").style.transform =
-    "translate(39vw, 0)";
-}
 
-var x,
-  y,
-  n = 0;
-
-function openMobileNav() {
-  while (n < 39) {
-    n = n + 1;
-  document.getElementById("mobileNav").style.transform =
-    "translate(-" + n + "vw, 0)";
-  }
-}
-
-function closeMobileNav() {
-  while (n < 36) {
-    n = n + 1;
-  document.getElementById("mobileNav").style.transform =
-    "translate(" + n + "vw, 0)";
-  }
   
   //x.style.transform = "rotate(" + n + "deg)";
   //x.style.webkitTransform = "rotate(" + n + "deg)";
   //x.style.OTransform = "rotate(" + n + "deg)";
   //x.style.MozTransform = "rotate(" + n + "deg)";
   
-}
