@@ -7,6 +7,101 @@ https://www.w3schools.com/css/css_grid.asp
 https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b
 */
 
+.webTxt,
+.webTxtT,
+.webTxtD {
+  cursor: pointer;
+}
+
+#buttonMarg2 {padding-bottom: 0;}
+
+.buttonMarg {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+  #centerside{align-items: center;}
+
+.webTxtT {
+  margin: 0;
+  margin-left: 100px;
+  z-index: 100;
+  margin-right: 50px;
+  margin-top: 15px;
+}
+
+.webTxtD {
+  margin: 0;
+  margin-top: 12px;
+  margin-left: 100px;
+  z-index: 100;
+  margin-right: 61px;
+}
+
+.webTxt {
+  margin: 0;
+  margin-left: 100px;
+  z-index: 100;
+  margin-right: 61px;
+}
+
+#webProjCoverImg {
+  display: flex;
+  max-width: 75vw;
+  justify-content: center;
+}
+
+#webProjSketch {max-width: 15vw; margin-right: 5vh; margin-bottom: 5vh;}
+
+.webProjImg {
+  width: 60vw;
+  margin-top: 7vh;
+}
+
+.webProjImgSize {
+  width: 50%;
+}
+
+.webProjImgSect {
+  display: flex;
+  justify-content: center;
+}
+
+.webProjImgSide {
+  display: flex;
+  max-width: 75vw;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: none;
+  width: max-content;
+}
+
+.webProjLand {
+  width: 75vw;
+}
+
+#webProjh1 {
+  margin: 0;
+  margin-top: 2vh;
+  margin-bottom: 32px;
+}
+
+.webProjh3 {
+  margin-top: 3.5vh;
+  margin-bottom: 0px;
+}
+
+.webProjh2 {
+  margin-top: 15vh;
+  margin-bottom: 0px;
+}
+
+.webProjp {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#fug{margin-left: 5vw;}
+
 body {
   background-color: #100d17;
   display: grid;
@@ -213,6 +308,13 @@ section.two {
   grid-column: 2;
   max-width: fit-content;
   margin-left: 60px;
+  grid-row: 1 / 3;
+}
+
+section.twoAB2 {
+  grid-column: 2;
+  max-width: 75vw;
+  margin-left: 99px;
   grid-row: 1 / 3;
 }
 
@@ -495,69 +597,6 @@ button.shake {
   transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
 
-button.shake:hover {
-  animation: sh0 0.5s ease-in-out both;
-}
-
-@keyframes sh0 {
-  0% {
-    transform: rotate(0deg) translate3d(0, 0, 0);
-  }
-
-  25% {
-    transform: rotate(7deg) translate3d(0, 0, 0);
-  }
-
-  50% {
-    transform: rotate(-7deg) translate3d(0, 0, 0);
-  }
-
-  75% {
-    transform: rotate(1deg) translate3d(0, 0, 0);
-  }
-
-  100% {
-    transform: rotate(0deg) translate3d(0, 0, 0);
-  }
-}
-
-button.shake:hover span {
-  animation: storm 0.7s ease-in-out both;
-  animation-delay: 0.06s;
-}
-
-button.shake::before,
-button.shake::after {
-  content: "";
-  color: #1e1e1e;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: #fff;
-  opacity: 0;
-  transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1),
-    opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
-  z-index: -1;
-  transform: translate(100%, -25%) translate3d(0, 0, 0);
-}
-
-button.shake:hover::before,
-button.shake:hover::after {
-  opacity: 0.15;
-  transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1),
-    opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
-}
-
-button.shake:hover::before {
-  transform: translate3d(50%, 0, 0) scale(0.9);
-}
-
-button.shake:hover::after {
-  transform: translate(50%, 0) scale(1.1);
-}
 
 /*Links*/
 a {
@@ -751,6 +790,10 @@ section.footercopyright {
   width: 200%;
 }
 
+.imgwidth2 {
+  width: 100%;
+}
+
 @media screen and (max-width: 600px) {
   body {
     background-color: #100d17;
@@ -762,8 +805,8 @@ section.footercopyright {
   }
 
   body#illusBod {
-  grid-template-rows: repeat(1, 1fr) auto;
-}
+    grid-template-rows: repeat(1, 1fr) auto;
+  }
 
   body.grid2 {
     grid-template-columns: 1fr;
@@ -890,6 +933,10 @@ section.footercopyright {
     flex-direction: column;
   }
 
+
+
+  #fug{margin-left: 0;}
+
   .portimg {
     display: flex;
     align-self: center;
@@ -948,6 +995,14 @@ section.footercopyright {
   }
 
   section.twoAB {
+    grid-column: 1;
+    max-width: fit-content;
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-row: 1 / 3;
+  }
+
+  section.twoAB2 {
     grid-column: 1;
     max-width: fit-content;
     margin-left: 50px;
@@ -1443,4 +1498,13 @@ section.footercopyright {
 }
 
 @media screen and (max-width: 1290px) {
+}
+
+body.webProjBody {
+  background-color: #100d17;
+  display: grid;
+  grid-template-columns: minmax(min-content, 167px) auto;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+  margin: 0px;
 }
