@@ -13,13 +13,17 @@ https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-
   cursor: pointer;
 }
 
-#buttonMarg2 {padding-bottom: 0;}
+#buttonMarg2 {
+  padding-bottom: 0;
+}
 
 .buttonMarg {
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
-  #centerside{align-items: center;}
+#centerside {
+  align-items: center;
+}
 
 .webTxtT {
   margin: 0;
@@ -50,7 +54,11 @@ https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-
   justify-content: center;
 }
 
-#webProjSketch {max-width: 15vw; margin-right: 5vh; margin-bottom: 5vh;}
+#webProjSketch {
+  max-width: 15vw;
+  margin-right: 5vh;
+  margin-bottom: 5vh;
+}
 
 .webProjImg {
   width: 60vw;
@@ -100,7 +108,9 @@ https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-
   margin-top: 0px;
   margin-bottom: 0px;
 }
-#fug{margin-left: 5vw;}
+#fug {
+  margin-left: 5vw;
+}
 
 body {
   background-color: #100d17;
@@ -597,7 +607,6 @@ button.shake {
   transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
 
-
 /*Links*/
 a {
   text-decoration: none;
@@ -782,16 +791,19 @@ section.footercopyright {
 }
 
 .vidimgwidth {
-  max-width: 500px;
-  /*margin-top: 200px; */
+  max-width: 60vw;
+  /*max-width: 500px;
+  margin-top: 200px; */
 }
 
 .imgwidth {
+  max-width: 60vw;
   width: 200%;
 }
 
 .imgwidth2 {
   width: 100%;
+  max-width: 60vw;
 }
 
 @media screen and (max-width: 600px) {
@@ -933,9 +945,9 @@ section.footercopyright {
     flex-direction: column;
   }
 
-
-
-  #fug{margin-left: 0;}
+  #fug {
+    margin-left: 0;
+  }
 
   .portimg {
     display: flex;
@@ -1497,13 +1509,319 @@ section.footercopyright {
   }
 }
 
-@media screen and (max-width: 1290px) {
+@media screen and (min-width: 602px) and (max-width: 1290px) {
+  .workbilineM {
+    margin: 0;
+  }
+
+  #illusMidline {
+    margin: 0;
+    margin-top: 275px;
+  }
+
+  .land_illus {
+    max-width: 60vw;
+  }
+
+  .workbilineMtop {
+    margin: 0;
+    margin-top: 251px;
+    margin-bottom: -12px;
+  }
+
+  .workbilineMbot {
+    margin: 0;
+  }
+
+  body {
+    background-color: #100d17;
+    display: grid;
+    grid-template-columns: minmax(min-content, 167px) 1fr;
+    grid-template-rows: repeat(1, 1fr) auto;
+    /*grid-template-rows: repeat(5, 1fr) auto; */
+    min-height: 100vh;
+    margin: 0px;
+  }
+
+  body#illusBod {
+    grid-template-rows: repeat(2, 1fr) auto;
+  }
+
+  body.grid2 {
+    grid-template-columns: minmax(min-content, 167px) 1fr;
+    grid-template-rows: 1fr auto;
+  }
+
+  body.grid3 {
+    grid-template-columns: minmax(min-content, 167px) 1fr;
+    grid-template-rows: 1fr auto;
+  }
+
+  section.rCgrid {
+    margin-top: 40px;
+    grid-row: 1;
+    grid-column: 2;
+    z-index: -1;
+  }
+
+  section.rCflex {
+    display: flex;
+    overflow: hidden;
+    top: 10px;
+  }
+
+  .rotatingC {
+    z-index: -100;
+    width: 50vw;
+    height: 50vw;
+    align-self: center;
+    position: fixed;
+  }
+
+  section.twoAB {
+    grid-column: 2;
+    max-width: fit-content;
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-row: 1 / 3;
+  }
+
+  section.twoAB2 {
+    overflow-x: hidden;
+    grid-column: 2;
+    max-width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-row: 1 / 3;
+  }
+
+  section.contacttwo {
+    grid-column: 2;
+    overflow-x: hidden;
+    max-width: fit-content;
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-row: 1 / 3;
+  }
+
+  .portimg1 {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+  }
+
+  section.threeAB {
+    grid-column: 2;
+    grid-row: 1;
+    z-index: 100;
+  }
+
+  .aboutimg {
+    display: none;
+    align-self: center;
+    justify-content: center;
+    margin-top: 180px;
+    z-index: 100;
+  }
+  #aboutimg {
+    z-index: 100;
+    margin-left: 4px;
+    width: 50vw;
+  }
+
+  .aboutimgMobile {
+    display: contents;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-top: 200px;
+    z-index: 100;
+  }
+
+  #abouth2 {
+    margin: 0;
+    margin-top: 4vh;
+    margin-bottom: 5px;
+  }
+
+  .aboutC {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    grid-row: 1/2;
+    z-index: -100;
+  }
+
+  #aboutC {
+    position: fixed;
+    width: 200vw;
+    align-self: center;
+  }
+
+  section.one {
+    display: none;
+  }
+
+  section.two {
+    max-width: fit-content;
+    margin-left: 60px;
+    grid-column: 2;
+    grid-row: 1;
+    overflow-x: hidden;
+  }
+
+  section.three {
+    grid-row: 2;
+    grid-column: 2;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.four {
+    grid-row: 3;
+    grid-column: 2;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.five {
+    grid-row: 4;
+    grid-column: 2;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.six {
+    grid-row: 5;
+    grid-column: 2;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.seven {
+    grid-row: 6;
+    grid-column: 2;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.eight {
+    grid-row: 7;
+    grid-column: 2;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 100;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  section.eightillus {
+    grid-row: 7;
+    grid-column: 2;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.nine {
+    grid-row: 8;
+    grid-column: 2;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.ten {
+    grid-row: 9;
+    grid-column: 2;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.eleven {
+    grid-row: 10;
+    grid-column: 2;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.twelve {
+    grid-row: 11;
+    grid-column: 2;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.thirteen {
+    grid-row: 12;
+    grid-column: 2;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.fourteen {
+    grid-row: 13;
+    grid-column: 2;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.fifteen {
+    grid-row: 14;
+    grid-column: 2;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.sixteen {
+    grid-row: 15;
+    grid-column: 2;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.seventeen {
+    grid-row: 16;
+    grid-column: 2;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 100;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  #workbiline {
+    position: relative;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+    .porttxt {
+    margin-top: 0px;
+    z-index: 100;
+    margin-left: 70px;
+  }
+
+  .porttxtT {
+    margin: 0;
+    z-index: 100;
+    margin-left: 70px;
+    margin-top: 15px;
+  }
+
+  .porttxtD {
+    margin: 0;
+    margin-top: 12px;
+    margin-left: 70px;
+    z-index: 100;
+    margin-right: 61px;
+  }
 }
 
 body.webProjBody {
   background-color: #100d17;
   display: grid;
-  grid-template-columns: minmax(min-content, 167px) auto;
+  grid-template-columns: minmax(min-content, 167px) 1fr;
   grid-template-rows: 1fr auto;
   min-height: 100vh;
   margin: 0px;
