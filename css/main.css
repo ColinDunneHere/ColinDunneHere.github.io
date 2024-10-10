@@ -734,14 +734,14 @@ section.footercopyright {
   cursor: pointer;
 }
 
-.portimg:hover .overlayhover2 {
-  opacity: 0.2;
-}
+@media (pointer: fine) {
+  .portimg:hover .overlayhover2 {
+    opacity: 0.2;
+  }
 
-.topportimg:hover .overlayhover {
-  /*fill: #fff;
-  color: #fff; */
-  opacity: 0.2;
+  .topportimg:hover .overlayhover {
+    opacity: 0.2;
+  }
 }
 
 .overlay {
@@ -986,27 +986,27 @@ section.footercopyright {
   }
 
   .webTxtT {
-  margin: 0;
-  margin-left: 50px;
-  z-index: 100;
-  margin-right: 50px;
-  margin-top: 15px;
-}
+    margin: 0;
+    margin-left: 50px;
+    z-index: 100;
+    margin-right: 50px;
+    margin-top: 15px;
+  }
 
-.webTxtD {
-  margin: 0;
-  margin-top: 12px;
-  margin-left: 50px;
-  z-index: 100;
-  margin-right: 61px;
-}
+  .webTxtD {
+    margin: 0;
+    margin-top: 12px;
+    margin-left: 50px;
+    z-index: 100;
+    margin-right: 61px;
+  }
 
-.webTxt {
-  margin: 0;
-  margin-left: 50px;
-  z-index: 100;
-  margin-right: 61px;
-}
+  .webTxt {
+    margin: 0;
+    margin-left: 50px;
+    z-index: 100;
+    margin-right: 61px;
+  }
 
   section.rCgrid {
     margin-top: 40px;
@@ -1819,7 +1819,7 @@ section.footercopyright {
     justify-content: center;
   }
 
-    .porttxt {
+  .porttxt {
     margin-top: 0px;
     z-index: 100;
     margin-left: 70px;
@@ -1841,27 +1841,27 @@ section.footercopyright {
   }
 
   .webTxtT {
-  margin: 0;
-  margin-left: 70px;
-  z-index: 100;
-  margin-right: 50px;
-  margin-top: 15px;
-}
+    margin: 0;
+    margin-left: 70px;
+    z-index: 100;
+    margin-right: 50px;
+    margin-top: 15px;
+  }
 
-.webTxtD {
-  margin: 0;
-  margin-top: 12px;
-  margin-left: 70px;
-  z-index: 100;
-  margin-right: 61px;
-}
+  .webTxtD {
+    margin: 0;
+    margin-top: 12px;
+    margin-left: 70px;
+    z-index: 100;
+    margin-right: 61px;
+  }
 
-.webTxt {
-  margin: 0;
-  margin-left: 70px;
-  z-index: 100;
-  margin-right: 61px;
-}
+  .webTxt {
+    margin: 0;
+    margin-left: 70px;
+    z-index: 100;
+    margin-right: 61px;
+  }
 }
 
 body.webProjBody {
