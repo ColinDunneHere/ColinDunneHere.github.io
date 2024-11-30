@@ -446,8 +446,38 @@ section.sixteen {
 }
 
 section.seventeen {
-  grid-column: 2 / 4;
+  grid-column: 3;
   grid-row: 15;
+  z-index: 100;
+}
+
+section.eighteen {
+  grid-column: 3;
+  grid-row: 16;
+  z-index: 100;
+}
+
+section.nineteen {
+  grid-column: 3;
+  grid-row: 17;
+  z-index: 100;
+}
+
+section.twenty {
+  grid-column: 3;
+  grid-row: 18;
+  z-index: 100;
+}
+
+section.twentyone {
+  grid-column: 3;
+  grid-row: 19;
+  z-index: 100;
+}
+
+section.footersection {
+  grid-column: 2 / 4;
+  grid-row: 100;
   justify-content: flex-end;
   align-items: flex-end;
   z-index: 100;
@@ -699,7 +729,7 @@ section.footer {
 section.footercopyright {
   display: flex;
   justify-content: center;
-  margin-bottom: 70px;
+  margin-bottom: 0px;
 }
 
 .burgerbod {
@@ -1231,6 +1261,41 @@ section.footercopyright {
   section.seventeen {
     grid-row: 16;
     grid-column: 1;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.eighteen {
+    grid-row: 17;
+    grid-column: 1;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.nineteen {
+    grid-row: 18;
+    grid-column: 1;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.twenty {
+    grid-row: 19;
+    grid-column: 1;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.twentyone {
+    grid-row: 20;
+    grid-column: 1;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.footersection {
+    grid-row: 100;
+    grid-column: 1;
     justify-content: flex-end;
     align-items: flex-end;
     z-index: 100;
@@ -1433,7 +1498,7 @@ section.footercopyright {
 
   .footercopyright {
     align-items: flex-end;
-    margin-bottom: 50vh;
+    margin-bottom: 0px;
   }
 
   .footertxtsize {
@@ -1803,6 +1868,41 @@ section.footercopyright {
 
   section.seventeen {
     grid-row: 16;
+    grid-column: 2;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.eighteen {
+    grid-row: 17;
+    grid-column: 2;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.nineteen {
+    grid-row: 18;
+    grid-column: 2;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.twenty {
+    grid-row: 19;
+    grid-column: 2;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.twentyone {
+    grid-row: 20;
+    grid-column: 2;
+    z-index: 100;
+    overflow-x: hidden;
+  }
+
+  section.footersection {
+    grid-row: 100;
     grid-column: 2;
     justify-content: flex-end;
     align-items: flex-end;
