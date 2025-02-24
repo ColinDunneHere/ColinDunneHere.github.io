@@ -637,6 +637,19 @@ button.shake {
   transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
 
+a#txtlink {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #987701;
+  line-height: 30px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+a#txtlink:hover {
+  color: #e9e0c2;
+}
+
 /*Links*/
 a {
   text-decoration: none;
