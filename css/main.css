@@ -19,7 +19,6 @@ https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-
   bottom: 0;
   background-color: #100d17; /* Black background with opacity */
   z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: none; /* Add a pointer on hover */
   justify-content: center;
   align-items: center;
 }
