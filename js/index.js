@@ -40,6 +40,71 @@ window.addEventListener("optimizedScroll", function () {
 
 var img2overlay;
 
+
+// Load logo animation
+if (document.referrer.indexOf(window.location.hostname) == -1) {
+  console.log("Page has been opened/loaded!");
+  document.getElementById("indexBod").style.overflowY = "hidden";
+  document.getElementById("logoAnimation").style.display = "flex";
+  startTimer();
+}
+
+function logoAnimEnd() {
+  document.getElementById("logoAnimation").style.display = "none";
+  document.getElementById("indexBod").style.overflowY = "scroll";
+  console.log("video ended 3");
+}
+
+function startTimer() {
+  console.log("Timer started, waiting for 6 seconds...");
+
+  setTimeout(() => {
+    fadeOutVideo();
+  }, 6700);
+
+  setTimeout(() => {
+    loadIndexBody();
+  }, 6000);
+}
+
+function loadIndexBody() {
+  document.getElementById("indexBod").style.display = "grid";
+}
+
+function fadeOutVideo() {
+  console.log("6 seconds passed! Function triggered.");
+  const logoAnim = document.getElementById("logoAnimation");
+  if (logoAnim) {
+    let opacity = 1;
+    const fadeEffect = setInterval(() => {
+      if (opacity > 0) {
+        opacity -= 0.05;
+        logoAnim.style.opacity = opacity;
+      } else {
+        clearInterval(fadeEffect);
+      }
+    }, 100);
+  }
+}
+
+
+
+
+//detect when video ends
+document.getElementById("logoAnimation").addEventListener("ended", myHandler, false);
+function myHandler(e) {
+  // What you want to do after the event
+  document.getElementById("logoAnimation").style.display = "none";
+  document.getElementById("indexBod").style.overflowY = "scroll";
+  console.log("video ended 1");
+}
+
+var video = document.getElementById("logoAnimation").
+video.onended = function (e) {
+  console.log("video ended 2");
+  /*Do things here!*/
+};
+
 function on(image) {
   document.getElementById('indexBod').style.overflowY = "hidden";
   img2overlay = image;
@@ -77,3 +142,5 @@ function closeBurguh() {
   //document.getElementById("illusBod").style.overflowY = "scroll";
   document.getElementById("mobileNavItems").style.display = "none";
 }
+
+
