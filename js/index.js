@@ -67,9 +67,7 @@ function startTimer() {
   }, 6000);
 }
 
-function loadIndexBody() {
-  document.getElementById("indexBod").style.display = "grid";
-}
+
 
 function fadeOutVideo() {
   console.log("6 seconds passed! Function triggered.");
@@ -89,21 +87,6 @@ function fadeOutVideo() {
 
 
 
-
-//detect when video ends
-document.getElementById("logoAnimation").addEventListener("ended", myHandler, false);
-function myHandler(e) {
-  // What you want to do after the event
-  document.getElementById("logoAnimation").style.display = "none";
-  document.getElementById("indexBod").style.overflowY = "scroll";
-  console.log("video ended 1");
-}
-
-var video = document.getElementById("logoAnimation").
-video.onended = function (e) {
-  console.log("video ended 2");
-  /*Do things here!*/
-};
 
 function on(image) {
   document.getElementById('indexBod').style.overflowY = "hidden";
