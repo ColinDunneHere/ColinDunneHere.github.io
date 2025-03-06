@@ -27,7 +27,14 @@
 
     <!-- Meta Tags Generated via https://www.opengraph.xyz -->
   </head>
+  
   <body id="indexBod">
+    <div id="logoAnimation">
+      <video id="logoAnimationVid" autoplay muted onended="logoAnimEnd()"><source src="img/cdLogoAnimation.mp4" type="video/mp4"></video>
+    </div>
+    <script src="js/index.js"></script>
+    
+    
     <section class="mobileHeaderGrid">
       <section class="mobileLogo">
         <a href="index.html"><img
@@ -171,7 +178,7 @@
       </section>
     </section>
 
-
+    
     <!--Portfolio overlay images-->
     <div class="overlay" id="mobilize" onclick="off('mobilize')"><img src="img/mobilize.jpg" alt="" class="overlayportrait"/></div>
     <div class="overlay" id="iconsofSF" onclick="off('iconsofSF')"><img src="img/iconsofsf_big.png" alt="" class="overlaylandscape"/></div>
@@ -371,6 +378,6 @@
         </section>
       </footer>
     </section>
-    <script src="js/index.js"></script>
+    
   </body>
 </html>
