@@ -46,7 +46,7 @@ if (document.referrer.indexOf(window.location.hostname) == -1) {
   console.log("Page has been opened/loaded!");
   document.getElementById("indexBod").style.overflowY = "hidden";
   document.getElementById("logoAnimation").style.display = "flex";
-  startTimer();
+  //startTimer();
 }
 
 function logoAnimEnd() {
@@ -54,6 +54,9 @@ function logoAnimEnd() {
   document.getElementById("indexBod").style.overflowY = "scroll";
   console.log("video ended 3");
 }
+
+
+document.getElementById("logoAnimationVid").addEventListener("play", startTimer);
 
 function startTimer() {
   console.log("Timer started, waiting for 6 seconds...");
