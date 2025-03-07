@@ -7,6 +7,9 @@ https://www.w3schools.com/css/css_grid.asp
 https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b
 */
 
+#dunneHereVid {
+  width: 40vw;
+}
 
 #logoAnimation {
   background-color: #100d17; /* Black background with opacity */
@@ -829,6 +832,11 @@ section.footercopyright {
   height: 95vh;
 }
 
+.dunneHereoverlaylandscape {
+  width: 95vw;
+}
+
+
 .overlayportrait {
   height: 95vh;
   margin: auto;
@@ -872,6 +880,11 @@ section.footercopyright {
 }
 
 @media screen and (max-width: 600px) {
+
+#dunneHereVid {
+  width: 80vw;
+}
+
   body {
     background-color: #100d17;
     display: grid;
@@ -904,6 +917,9 @@ section.footercopyright {
     width: 93vw;
     height: auto;
   }
+  .dunneHereoverlaylandscape {
+  width: 95vw;
+}
 
   .overlayportrait {
     width: 93vw;
@@ -1638,6 +1654,10 @@ section.footercopyright {
 }
 
 @media screen and (min-width: 602px) and (max-width: 1290px) {
+#dunneHereVid {
+  width: 58vw;
+}
+
   .workbilineM {
     margin: 0;
   }
