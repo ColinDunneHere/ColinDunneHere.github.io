@@ -38,6 +38,10 @@ https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-
   cursor: pointer;
 }
 
+#nohov-webTxt {
+  cursor: default;
+}
+
 #buttonMarg2 {
   padding-bottom: 0;
 }

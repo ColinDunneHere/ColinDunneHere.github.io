@@ -43,6 +43,15 @@ var img2overlay;
 
 // Load logo animation
 if (document.referrer.indexOf(window.location.hostname) == -1) {
+  console.log(window.screen.width);
+  
+  //check if screen is mobile sized to change video source to accommodate the different size
+  if (window.screen.width < 768) {
+    console.log("Mobile Sized");
+     document.getElementById("logoAnimationVid").setAttribute("src", "img/cdLogoAnimation.mp4");
+    
+    //document.getElementById("logoAnimationVid").src = "img/cdLogoAnimation.mp4";
+  }
   console.log("Page has been opened/loaded!");
   document.getElementById("indexBod").style.overflowY = "hidden";
   document.getElementById("logoAnimation").style.display = "flex";
