@@ -955,6 +955,9 @@ section.footercopyright {
 }
 
 @media screen and (max-width: 600px) {
+  .cursor {
+  display: none;
+}
 
 #dunneHereVid {
   width: 80vw;
@@ -1729,6 +1732,11 @@ section.footercopyright {
 }
 
 @media screen and (min-width: 602px) and (max-width: 1290px) {
+  /*
+  .cursor {
+  display: none;
+} */
+ 
 #dunneHereVid {
   width: 58vw;
 }
