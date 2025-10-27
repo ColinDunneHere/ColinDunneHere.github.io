@@ -27,6 +27,7 @@
     <!-- Meta Tags Generated via https://www.opengraph.xyz -->
     </head>
     <body class="grid3">
+        <div class="cursor"></div>
         <section class="mobileHeaderGrid">
       <section class="mobileLogo">
         <a href="index.html"><img
@@ -58,15 +59,15 @@
         <!--Header/left nav bar-->
         <nav class="one">
             <section>
-                <a href="index.html"><img src="img/logotype.svg" alt="Logo innitials 'CD' with name 'colin dunne' below it"></a>
+                <a href="index.html" data-cursor="hover"><img src="img/logotype.svg" alt="Logo innitials 'CD' with name 'colin dunne' below it"></a>
             </section>
             
             <section class="navsection">
-                <a href="index.html">Design</a>
-                <a href="web.html">Web</a>
-                <a href="illustration.html">Illustration</a>
-                <a href="about.html">About</a>
-                <a href="contact.html" class="navactive">Contact</a>
+                <a href="index.html" data-cursor="hover">Design</a>
+                <a href="web.html" data-cursor="hover">Web</a>
+                <a href="illustration.html" data-cursor="hover">Illustration</a>
+                <a href="about.html" data-cursor="hover">About</a>
+                <a href="contact.html" class="navactive" data-cursor="hover">Contact</a>
             </section>
         </nav>
         <div class="menu">
@@ -94,10 +95,10 @@
             <h2 id="contacth2">Want to connect?</h2>
             <h4 id="contacth4">Reach me here, via email, or LinkedIn. I'll get back to you as soon as I can!</h4>
             <br>
-            <a href="mailto:colindunnester@gmail.com" id="email">colindunnester@gmail.com</a>
+            <a href="mailto:colindunnester@gmail.com" data-cursor="hover" id="email">colindunnester@gmail.com</a>
             <br>
             <br>
-            <a href="https://www.linkedin.com/in/colin-dunne/" target="_blank"><img src='img/linkedinlogo.svg' onmouseover="this.src='img/activelinkedinlogo.svg';" onmouseout="this.src='img/linkedinlogo.svg';" alt="link to my LinkedIn profile" id="linkedInLogo"/></a>
+            <a href="https://www.linkedin.com/in/colin-dunne/" data-cursor="hover" target="_blank"><img src='img/linkedinlogo.svg' onmouseover="this.src='img/activelinkedinlogo.svg';" onmouseout="this.src='img/linkedinlogo.svg';" alt="link to my LinkedIn profile" id="linkedInLogo"/></a>
             
             <!-- modify this form HTML and place wherever you want your form -->
             <form
@@ -118,7 +119,7 @@
                     <textarea id="Message" name="Message" rows="8" cols="60" placeholder="Type here..." ></textarea>
                 </section>
                 <div id="submissionB">
-                    <button class="shake" type="submit">
+                    <button class="shake" type="submit" data-cursor="hover">
                 <div>Send</div> <img src="img/sendicon.svg" id="sendicon">
             </button>
                 </div>
@@ -141,9 +142,9 @@
             <footer>
                 <section class="footer">
                     <!--Source: https://stackoverflow.com/questions/18813299/changing-image-on-hover-with-css-html by kurdt's -->
-                    <a href="https://www.linkedin.com/in/colin-dunne/" target="_blank"><img src='img/linkedinlogo.svg' onmouseover="this.src='img/activelinkedinlogo.svg';" onmouseout="this.src='img/linkedinlogo.svg';" alt="link to my LinkedIn profile" id="linkedInLogo"/></a>
+                    <a href="https://www.linkedin.com/in/colin-dunne/" data-cursor="hover" target="_blank"><img src='img/linkedinlogo.svg' onmouseover="this.src='img/activelinkedinlogo.svg';" onmouseout="this.src='img/linkedinlogo.svg';" alt="link to my LinkedIn profile" id="linkedInLogo"/></a>
                     <!--Source: https://www.rapidtables.com/web/html/mailto.html-->
-                    <a href="mailto:colindunnester@gmail.com" id="email">colindunnester@gmail.com</a>
+                    <a href="mailto:colindunnester@gmail.com" data-cursor="hover" id="email">colindunnester@gmail.com</a>
                 </section>
                 <section class="footercopyright">
                     <p class="footertxtsize">Copyright © 2025 ColinDunne. All Rights Reserved</p>

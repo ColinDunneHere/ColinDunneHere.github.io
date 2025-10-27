@@ -28,6 +28,7 @@
     <!-- Meta Tags Generated via https://www.opengraph.xyz -->
   </head>
   <body id="indexBod">
+    <div class="cursor"></div>
     <section class="mobileHeaderGrid">
       <section class="mobileLogo">
         <a href="index.html"><img
@@ -59,7 +60,7 @@
     <!--Header/left nav bar-->
     <nav class="one">
       <section>
-        <a href="index.html"><img
+        <a href="index.html" data-cursor="hover"><img
           src="img/logotype.svg"
           alt="Logo innitials 'CD' with name 'colin dunne' below it"
         /></a>
@@ -67,11 +68,11 @@
       
 
       <section class="navsection">
-        <a href="index.html">Design</a>
-        <a href="web.html" class="navactive">Web</a>
-        <a href="illustration.html">Illustration</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-cursor="hover">Design</a>
+        <a href="web.html" class="navactive" data-cursor="hover">Web</a>
+        <a href="illustration.html" data-cursor="hover">Illustration</a>
+        <a href="about.html" data-cursor="hover">About</a>
+        <a href="contact.html" data-cursor="hover">Contact</a>
       </section>
     </nav>
     <div class="menu">
@@ -137,8 +138,8 @@
     </nav> -->
 
 
-    <div class="overlay" id="dunneHere" onclick="off('dunneHere')"><video loop autoplay muted playsinline class="dunneHereoverlaylandscape"> <source src="img/dunneHereSiteVid.mp4" type="video/mp4"></video></div>
-
+    <div class="overlay" data-cursor="hover" id="dunneHere" onclick="off('dunneHere')"><video loop autoplay muted playsinline class="dunneHereoverlaylandscape"> <source src="img/dunneHereSiteVid.mp4" type="video/mp4"></video></div>
+    <div class="overlay" data-cursor="hover" id="galleryApp" onclick="off('galleryApp')"><img src="img/web/artGalleryApp.jpg" alt="" class="overlayportrait"/></div>
     <!--Biline-->
     <section class="two">
       <section id="workbiline">
@@ -178,19 +179,19 @@
       <section class="portimg1">
         <section class="topportimg">
           <img src="img/web/portfolioWireframeS.png" alt="" class="imgwidth2"/>
-          <div class="overlayhover" onClick="location.href='portfolioWeb.html'"><div></div></div>
+          <div class="overlayhover" data-cursor="hover" onClick="location.href='portfolioWeb.html'"><div></div></div>
         </section>
       </section>
-      <h3 class="webTxtT" onClick="location.href='portfolioWeb.html'">Web Portfolio</h3>
-      <p class="webTxt" onClick="location.href='portfolioWeb.html'"><i>UX + UI Website Design & Production, 2022-Present</i></p>
-      <p class="webTxtD" onClick="location.href='portfolioWeb.html'">This website! Spearheaded the concept and execution of a design portfolio featuring my work while employing my technical design and coding skills. <br> <br><i>click to learn more</i></p>
+      <h3 class="webTxtT" onClick="location.href='portfolioWeb.html'" data-cursor="hover">Web Portfolio</h3>
+      <p class="webTxt" onClick="location.href='portfolioWeb.html'" data-cursor="hover"><i>UX + UI Website Design & Production, 2022-Present</i></p>
+      <p class="webTxtD" onClick="location.href='portfolioWeb.html'" data-cursor="hover">This website! Spearheaded the concept and execution of a design portfolio featuring my work while employing my technical design and coding skills. <br> <br><i>click to learn more</i></p>
     </section>
 
     <section class="four">
       <section class="portimg1">
         <section class="topportimg">
           <video loop autoplay muted playsinline id="dunneHereVid"> <source src="img/dunneHereSiteVid.mp4" type="video/mp4"></video>
-          <div class="overlayhover" onclick="on('dunneHere')"><div></div></div>
+          <div class="overlayhover" data-cursor="hover" onclick="on('dunneHere')"><div></div></div>
         </section>
       </section>
       <h3 class="webTxtT" id="nohov-webTxt">Design Studio Site & Landing Page</h3>
@@ -203,11 +204,11 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/web/theaterSiteS.png" alt="" class="imgwidth2"/>
-          <div class="overlayhover2"  onClick="location.href='theaterWeb.html'"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover" onClick="location.href='theaterWeb.html'"> <div></div></div>
         </section>
-        <h3 class="webTxtT" onClick="location.href='theaterWeb.html'">Theater Desktop & Mobile Site</h3>
-      <p class="webTxt" onClick="location.href='theaterWeb.html'"><i>UX + UI Project, Google UX Certification, 2022</i></p>
-      <p class="webTxtD" onClick="location.href='theaterWeb.html'">Leading the project to create a quick seat reservation flow consistent across platforms <br> <br><i>click to learn more</i></p>
+        <h3 class="webTxtT" onClick="location.href='theaterWeb.html'" data-cursor="hover">Theater Desktop & Mobile Site</h3>
+      <p class="webTxt" onClick="location.href='theaterWeb.html'" data-cursor="hover"><i>UX + UI Project, Google UX Certification, 2022</i></p>
+      <p class="webTxtD" onClick="location.href='theaterWeb.html'" data-cursor="hover">Leading the project to create a quick seat reservation flow consistent across platforms <br> <br><i>click to learn more</i></p>
       </section>
     </section>
 
@@ -216,7 +217,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/web/artGalleryApp.jpg" alt="" class="imgwidth2"/>
-          <div class="overlayhover2" > <div></div></div>
+          <div class="overlayhover2" data-cursor="hover" onclick="on('galleryApp')"> <div></div></div>
         </section>
         <h3 class="webTxtT">Art Gallery Mobile App</h3>
       <p class="webTxt"><i>UX + UI Project, Google UX Certification, 2022</i></p>
@@ -323,7 +324,7 @@
         <section class="footer">
           <!--Source: https://stackoverflow.com/questions/18813299/changing-image-on-hover-with-css-html by kurdt's -->
           <a href="https://www.linkedin.com/in/colin-dunne/" target="_blank"
-            ><img
+            ><img data-cursor="hover"
               src="img/linkedinlogo.svg"
               onmouseover="this.src='img/activelinkedinlogo.svg';"
               onmouseout="this.src='img/linkedinlogo.svg';"
@@ -331,7 +332,7 @@
               id="linkedInLogo"
           /></a>
           <!--Source: https://www.rapidtables.com/web/html/mailto.html-->
-          <a href="mailto:colindunnester@gmail.com" id="email">colindunnester@gmail.com</a>
+          <a href="mailto:colindunnester@gmail.com" data-cursor="hover" id="email">colindunnester@gmail.com</a>
         </section>
         <section class="footercopyright">
           <p class="footertxtsize">Copyright © 2025 ColinDunne. All Rights Reserved</p>

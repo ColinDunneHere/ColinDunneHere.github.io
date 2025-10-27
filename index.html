@@ -29,6 +29,7 @@
   </head>
   
   <body id="indexBod">
+    <div class="cursor"></div>
     <div id="logoAnimation">
       <video id="logoAnimationVid" playsinline autoplay muted onended="logoAnimEnd()"><source src="img/cdLogoAnimationName.mp4" id="logoAnimationSource" type="video/mp4"></video>
     </div>
@@ -65,7 +66,7 @@
     <!--Header/left nav bar-->
     <nav class="one">
       <section>
-        <a href="index.html"><img
+        <a href="index.html" data-cursor="hover"><img
           src="img/logotype.svg"
           alt="Logo innitials 'CD' with name 'colin dunne' below it"
         /></a>
@@ -74,21 +75,21 @@
       
 
       <section class="navsection">
-        <a href="index.html" class="navactive">Design</a>
-        <a href="web.html">Web</a>
-        <a href="illustration.html">Illustration</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" class="navactive" data-cursor="hover" >Design</a>
+        <a href="web.html"data-cursor="hover" >Web</a>
+        <a href="illustration.html" data-cursor="hover" >Illustration</a>
+        <a href="about.html" data-cursor="hover" >About</a>
+        <a href="contact.html" data-cursor="hover" >Contact</a>
       </section>
     </nav>
     <div class="menu">
       <nav class="menu__nav">
         <section class="navsectionB">
-          <a href="index.html" class="navactive">Design</a>
-          <a href="web.html">Web</a>
-          <a href="illustration.html">Illustration</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+          <a href="index.html" class="navactive" data-cursor="hover">Design</a>
+          <a href="web.html" data-cursor="hover">Web</a>
+          <a href="illustration.html" data-cursor="hover">Illustration</a>
+            <a href="about.html" data-cursor="hover">About</a>
+            <a href="contact.html" data-cursor="hover">Contact</a>
         </section>
         
       </nav>
@@ -179,22 +180,22 @@
 
     
     <!--Portfolio overlay images-->
-    <div class="overlay" id="cenat" onclick="off('cenat')"><img src="img/CenatGIFNew.gif" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="coco" onclick="off('coco')"><img src="img/CocoGIF.gif" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="allo" onclick="off('allo')"><img src="img/AlloGIF2.gif" alt="" class="overlaylandscape"/></div>
-    <div class="overlay" id="mobilize" onclick="off('mobilize')"><img src="img/mobilize.jpg" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="iconsofSF" onclick="off('iconsofSF')"><img src="img/iconsofsf_big.png" alt="" class="overlaylandscape"/></div>
-    <div class="overlay" id="brand" onclick="off('brand')"><img src="img/brand_big.png" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="accordion" onclick="off('accordion')"><img src="img/accordionbook_big.png" alt="" class="overlaylandscape"/></div>
-    <div class="overlay" id="oldCD" onclick="off('oldCD')"><img src="img/oldCDlogoGIF.gif" alt="" class="overlaylandscape"/></div>
-    <div class="overlay" id="navy" onclick="off('navy')"><img src="img/NavyFederalGIF3.gif" alt="" class="overlaylandscape"/></div>
-    <div class="overlay" id="vic" onclick="off('vic')"><img src="img/VicGIF 2.gif" alt="" class="overlaylandscape"/></div>
-    <div class="overlay" id="dave" onclick="off('dave')"><img src="img/dave_big.png" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="klingspor" onclick="off('klingspor')"><img src="img/typKlingspor_S.png" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="modern" onclick="off('modern')"><img src="img/typModern_S.png" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="helvetica" onclick="off('helvetica')"><img src="img/typHelvetica_S.png" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="typComp" onclick="off('typComp')"><img src="img/typComp.png" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="sif" onclick="off('sif')"><img src="img/SIF-Logo-Showcase.gif" alt="" class="overlaylandscape"/></div>
+    <div class="overlay" data-cursor="hover" id="cenat" onclick="off('cenat')"><img src="img/CenatGIFNew.gif" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="coco" onclick="off('coco')"><img src="img/CocoGIF.gif" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="allo" onclick="off('allo')"><img src="img/AlloGIF2.gif" alt="" class="overlaylandscape"/></div>
+    <div class="overlay" data-cursor="hover" id="mobilize" onclick="off('mobilize')"><img src="img/mobilize.jpg" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="iconsofSF" onclick="off('iconsofSF')"><img src="img/iconsofsf_big.png" alt="" class="overlaylandscape"/></div>
+    <div class="overlay" data-cursor="hover" id="brand" onclick="off('brand')"><img src="img/brand_big.png" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="accordion" onclick="off('accordion')"><img src="img/accordionbook_big.png" alt="" class="overlaylandscape"/></div>
+    <div class="overlay" data-cursor="hover" id="oldCD" onclick="off('oldCD')"><img src="img/oldCDlogoGIF.gif" alt="" class="overlaylandscape"/></div>
+    <div class="overlay" data-cursor="hover" id="navy" onclick="off('navy')"><img src="img/NavyFederalGIF3.gif" alt="" class="overlaylandscape"/></div>
+    <div class="overlay" data-cursor="hover" id="vic" onclick="off('vic')"><img src="img/VicGIF 2.gif" alt="" class="overlaylandscape"/></div>
+    <div class="overlay" data-cursor="hover" id="dave" onclick="off('dave')"><img src="img/dave_big.png" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="klingspor" onclick="off('klingspor')"><img src="img/typKlingspor_S.png" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="modern" onclick="off('modern')"><img src="img/typModern_S.png" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="helvetica" onclick="off('helvetica')"><img src="img/typHelvetica_S.png" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="typComp" onclick="off('typComp')"><img src="img/typComp.png" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="sif" onclick="off('sif')"><img src="img/SIF-Logo-Showcase.gif" alt="" class="overlaylandscape"/></div>
 
 
     <!--Portfolio work-->
@@ -202,7 +203,7 @@
       <section class="portimg1">
         <section class="topportimg">
           <img src="img/CenatGIFNew.gif" alt="" class="port_illus"/>
-          <div class="overlayhover"  onclick="on('cenat')"> <div></div></div>
+          <div class="overlayhover" data-cursor="hover"  onclick="on('cenat')"> <div></div></div>
         </section>      
       </section>
       <h3 class="porttxtT">Kai Cenat x Epic Games x Mercedes</h3>
@@ -215,7 +216,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/CocoGIF.gif" alt="" class="port_illus"/>
-          <div class="overlayhover2"  onclick="on('coco')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover"  onclick="on('coco')"> <div></div></div>
         </section>
         <h3 class="porttxt">Coco Robotics</h3>
       <p class="porttxt"><i>Illustrator, Print, Product Design, 2025</i></p>
@@ -242,7 +243,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/AlloGIF2.gif" alt="" class="land_illus"/>
-          <div class="overlayhover2"  onclick="on('allo')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover"  onclick="on('allo')"> <div></div></div>
         </section>
         <h3 class="porttxt">The Allosphere</h3>
       <p class="porttxt"><i>Live Concert, Lead Graphics Manager, C++, Unreal Engine, Photoshop, Animation (2D & 3D), 2025</i></p>
@@ -257,7 +258,7 @@
 
     <section class="seven">
       <section class="portfolio">
-        <section class="portimg">
+        <section class="embedimg">
           <iframe class="vidimgwidth" height="315" src="https://www.youtube.com/embed/19zkiINvBy8?si=Kbl4t__xn_EnZFMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
         <h3 class="porttxtT">Car Conversion</h3>
@@ -268,7 +269,7 @@
 
     <section class="eightillus">
       <section class="portfolio">
-        <section class="portimg">
+        <section class="embedimg">
           <iframe class="vidimgwidth" height="315" src="https://www.youtube.com/embed/EOp2T6G4w1k?si=Mz-DQYTJpEWR3iS8&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <!--
           <iframe class="vidimgwidth" height="315" src="https://www.youtube.com/embed/Fp0GORgQOlw?si=QMWxPhLeuMyyjLHl&rel=0&cc_lang_pref=en&cc_load_policy=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
@@ -279,7 +280,7 @@
       <h3 class="porttxtT">IN STUDIO</h3>
       <p class="porttxt"><i>Video (Trailer), 2025</i></p>
       <p class="porttxtD">An interview done entirely in Italian featuring international artist Francesco Callistri for Tobian Art Gallery. Along with filming, directing, and editing the interview I created alternate formats (such as this trailer) for the gallery. 
-        Find the full interview <a href="https://www.youtube.com/watch?v=Fp0GORgQOlw" target='_blank' id="txtlink">here</a>.</p>
+        Find the full interview <a href="https://www.youtube.com/watch?v=Fp0GORgQOlw" target='_blank' id="txtlink" data-cursor="hover" >here</a>.</p>
       <!--<p class="porttxtD">Placed on the opposite leg, this tattoo design was made to look up at my first tattoo (a rose). At the time it was my first Goliath, and now I wear it.</p>-->
     </section>
 
@@ -287,7 +288,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/VicGIF 2.gif" alt="" class="land_illus" onclick="on('vic')"/>
-          <div class="overlayhover2"  onclick="on('vic')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover"  onclick="on('vic')"> <div></div></div>
         </section>
         <h3 class="porttxtT">Storefront</h3>
       <p class="porttxt"><i>Illustrator, Print, 2025 (in progress)</i></p>
@@ -299,7 +300,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/NavyFederalGIF3.gif" alt="" class="land_illus" onclick="on('navy')"/>
-          <div class="overlayhover2"  onclick="on('navy')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover"  onclick="on('navy')"> <div></div></div>
         </section>
         <h3 class="porttxtT">Navy Federal Redesign, Web, Live Prototype, Video, & Animation</h3>
       <p class="porttxt"><i>Illustrator, Figma, Blender, Photography, HTML, CSS, JS, Premiere Pro, Photoshop, 2025</i></p>
@@ -315,7 +316,7 @@
       <section class="portfolio">
         <section class="topportimg">
           <img src="img/mobile.jpg" alt="" class="imgwidth"/>
-          <div class="overlayhover"  onclick="on('mobilize')"> <div></div></div>
+          <div class="overlayhover" data-cursor="hover"  onclick="on('mobilize')"> <div></div></div>
         </section>      
       </section>
       <h3 class="porttxtT">Mobilize</h3>
@@ -328,7 +329,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/iconsofsf.png" alt="" class="imgwidth"/>
-          <div class="overlayhover2"  onclick="on('iconsofSF')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover"  onclick="on('iconsofSF')"> <div></div></div>
         </section>
         <h3 class="porttxt">Icons of San Francisco</h3>
       <p class="porttxt"><i>Digital Media, Illustrator, 2022</i></p>
@@ -340,7 +341,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/typKlingspor_S.png" class="toptypimgwidth" onclick="on('klingspor')"/>
-          <div class="overlayhover2"  onclick="on('klingspor')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover"  onclick="on('klingspor')"> <div></div></div>
         </section>
         <h3 class="porttxtT">Wilhelm Klingspor Gotisch</h3>
       <p class="porttxt"><i>Digital Media, InDesign, Research Poster Series (1/3), 30x40 in, 2022</i></p>
@@ -353,7 +354,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/typModern_S.png" class="typimgwidth" onclick="on('modern')"/>
-          <div class="overlayhover2"  onclick="on('modern')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover"  onclick="on('modern')"> <div></div></div>
         </section>
          <h3 class="porttxtT">Modern No. 20</h3>
       <p class="porttxt"><i>Digital Media, InDesign, Research Poster Series (2/3), 30x40 in, 2022</i></p>
@@ -367,7 +368,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/typHelvetica_S.png" class="typimgwidth" onclick="on('helvetica')"/>
-          <div class="overlayhover2"  onclick="on('helvetica')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover"  onclick="on('helvetica')"> <div></div></div>
         </section>
         <h3 class="porttxtT">Helvetica</h3>
       <p class="porttxt"><i>Digital Media, InDesign, Research Poster Series (3/3), 30x40 in, 2022</i></p>
@@ -382,7 +383,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/typComp.png" class="typimgwidth" onclick="on('typComp')"/>
-          <div class="overlayhover2" onclick="on('typComp')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover"  onclick="on('typComp')"> <div></div></div>
         </section>
         <h3 class="porttxtT">After his fall</h3>
       <p class="porttxt"><i>Digital Media, InDesign, 2022</i></p>
@@ -394,7 +395,7 @@
       <section class="portfolio">
          <section class="portimg">
           <img src="img/SIF-Logo-Showcase.gif" class="land_illus" onclick="on('sif')"/>
-          <div class="overlayhover2" onclick="on('sif')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover" onclick="on('sif')"> <div></div></div>
         </section>
         <h3 class="porttxtT">SIF Logo Design</h3>
       <p class="porttxt"><i>Digital Media, 2025</i></p>
@@ -406,7 +407,7 @@
 
     <section class="eighteen">
       <section class="portfolio">
-        <section class="portimg">
+        <section class="embedimg">
           <iframe class="vidimgwidth" height="315" src="https://www.youtube.com/embed/aPpWAZTmA9k?si=vhX-HuapaW9i4otX&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <!--<<a href="https://vimeo.com/799319219" target="_blank"><img src="img/how2makescrambledeggs.JPG" class="vidimgwidth" /></a>
           div class="overlayhover2"> <div></div></div> -->
@@ -427,8 +428,8 @@
     <section class="nineteen">
       <section class="portfolio">
         <section class="portimg">
-          <img src="img/dave.jpg" alt="" class="imgwidth" onclick="on('dave')"/>
-          <div class="overlayhover2"  onclick="on('dave')"> <div></div></div>
+          <img src="img/dave.jpg" alt="" class="land_illus" onclick="on('dave')"/>
+          <div class="overlayhover2" data-cursor="hover"  onclick="on('dave')"> <div></div></div>
         </section>
         <h3 class="porttxtT">David</h3>
       <p class="porttxt"><i>Digital Media Design & Tattoo, Photoshop, 2022</i></p>
@@ -441,7 +442,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/accordionbook.png" alt="" class="imgwidth" onclick="on('accordion')"/>
-          <div class="overlayhover2"  onclick="on('accordion')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover"  onclick="on('accordion')"> <div></div></div>
         </section>
         <h3 class="porttxtT">Accordion Book</h3>
       <p class="porttxt"><i>Product Design Accordion Booklet, InDesign, 2022</i></p>
@@ -453,7 +454,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/oldCDlogoGIF.gif" alt="" class="vidimgwidth" onclick="on('accordion')"/>
-          <div class="overlayhover2"  onclick="on('oldCD')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover"  onclick="on('oldCD')"> <div></div></div>
         </section>
         <h3 class="porttxtT">Legacy Logo Animation</h3>
       <p class="porttxt"><i>Illustrator, Photoshop, 2022</i></p>
@@ -485,7 +486,7 @@
         <section class="footer">
           <!--Source: https://stackoverflow.com/questions/18813299/changing-image-on-hover-with-css-html by kurdt's -->
           <a href="https://www.linkedin.com/in/colin-dunne/" target="_blank"
-            ><img
+            ><img data-cursor="hover" 
               src="img/linkedinlogo.svg"
               onmouseover="this.src='img/activelinkedinlogo.svg';"
               onmouseout="this.src='img/linkedinlogo.svg';"
@@ -493,7 +494,7 @@
               id="linkedInLogo"
           /></a>
           <!--Source: https://www.rapidtables.com/web/html/mailto.html-->
-          <a href="mailto:colindunnester@gmail.com" id="email">colindunnester@gmail.com</a>
+          <a href="mailto:colindunnester@gmail.com" data-cursor="hover" id="email">colindunnester@gmail.com</a>
         </section>
         <section class="footercopyright">
           <p class="footertxtsize">Copyright © 2025 ColinDunne. All Rights Reserved</p>

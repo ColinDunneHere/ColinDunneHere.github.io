@@ -46,6 +46,7 @@
 
   </head>
   <body id="illusBod" > <!-- onload="illusLoad()" -->
+    <div class="cursor"></div>
     <section class="mobileHeaderGrid">
       <section class="mobileLogo">
         <a href="index.html"><img
@@ -100,18 +101,18 @@
     <!--Header/left nav bar-->
     <nav class="one">
       <section>
-        <a href="index.html"><img
+        <a href="index.html" data-cursor="hover" ><img
           src="img/logotype.svg"
           alt="Logo innitials 'CD' with name 'colin dunne' below it"
         /></a>
       </section>
 
       <section class="navsection">
-        <a href="index.html">Design</a>
-        <a href="web.html">Web</a>
-        <a href="illustration.html" class="navactive">Illustration</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-cursor="hover" >Design</a>
+        <a href="web.html" data-cursor="hover" >Web</a>
+        <a href="illustration.html" class="navactive" data-cursor="hover">Illustration</a>
+        <a href="about.html" data-cursor="hover" >About</a>
+        <a href="contact.html" data-cursor="hover" >Contact</a>
       </section>
     </nav>
     <div class="menu">
@@ -210,26 +211,26 @@
 
 
     <!--Portfolio overlay images-->
-    <div class="overlay" id="skull" onclick="off('skull')"><img src="img/illustration/hidden_smiles.webp" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="drapery" onclick="off('drapery')"><img src="img/illustration/drapery.webp" alt="" class="overlaylandscape"/></div>
-    <div class="overlay" id="newman" onclick="off('newman')"><img src="img/illustration/a_good_boy.webp" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="peace" onclick="off('peace')"><img src="img/illustration/at_peace.webp" alt="" class="overlaylandscape"/></div>
-    <div class="overlay" id="snowAngel" onclick="off('snowAngel')"><img src="img/illustration/snow_angel.webp" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="journey" onclick="off('journey')"><img src="img/illustration/journey.webp" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="self" onclick="off('self')"><img src="img/illustration/self_port.webp" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="helper" onclick="off('helper')"><img src="img/illustration/little_helper.webp" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="road" onclick="off('road')"><img src="img/illustration/for_the_road.webp" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="spy" onclick="off('spy')"><img src="img/illustration/red_spy.webp" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="reflection" onclick="off('reflection')"><img src="img/illustration/reflection.webp" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="corner" onclick="off('corner')"><img src="img/illustration/just_around_the_corner.webp" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="fortune" onclick="off('fortune')"><img src="img/illustration/distant_fortune.webp" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="rise" onclick="off('rise')"><img src="img/illustration/rise_img.webp" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="skull" onclick="off('skull')"><img src="img/illustration/hidden_smiles.webp" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="drapery" onclick="off('drapery')"><img src="img/illustration/drapery.webp" alt="" class="overlaylandscape"/></div>
+    <div class="overlay" data-cursor="hover" id="newman" onclick="off('newman')"><img src="img/illustration/a_good_boy.webp" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="peace" onclick="off('peace')"><img src="img/illustration/at_peace.webp" alt="" class="overlaylandscape"/></div>
+    <div class="overlay" data-cursor="hover" id="snowAngel" onclick="off('snowAngel')"><img src="img/illustration/snow_angel.webp" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="journey" onclick="off('journey')"><img src="img/illustration/journey.webp" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="self" onclick="off('self')"><img src="img/illustration/self_port.webp" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="helper" onclick="off('helper')"><img src="img/illustration/little_helper.webp" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="road" onclick="off('road')"><img src="img/illustration/for_the_road.webp" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="spy" onclick="off('spy')"><img src="img/illustration/red_spy.webp" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="reflection" onclick="off('reflection')"><img src="img/illustration/reflection.webp" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="corner" onclick="off('corner')"><img src="img/illustration/just_around_the_corner.webp" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="fortune" onclick="off('fortune')"><img src="img/illustration/distant_fortune.webp" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="rise" onclick="off('rise')"><img src="img/illustration/rise_img.webp" alt="" class="overlayportrait"/></div>
 
-    <div class="overlay" id="handstudy" onclick="off('handstudy')"><img src="img/illustration/hand_study_flo24.jpg" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="dante" onclick="off('dante')"><img src="img/illustration/dante_flo24.jpg" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="cfigure" onclick="off('cfigure')"><img src="img/illustration/color_figure_study_flo24.jpg" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="figure" onclick="off('figure')"><img src="img/illustration/figure_study_flo24.jpg" alt="" class="overlayportrait"/></div>
-    <div class="overlay" id="royal" onclick="off('royal')"><img src="img/illustration/final_Fall_24_Drawing_Project.webp" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="handstudy" onclick="off('handstudy')"><img src="img/illustration/hand_study_flo24.jpg" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="dante" onclick="off('dante')"><img src="img/illustration/dante_flo24.jpg" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="cfigure" onclick="off('cfigure')"><img src="img/illustration/color_figure_study_flo24.jpg" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="figure" onclick="off('figure')"><img src="img/illustration/figure_study_flo24.jpg" alt="" class="overlayportrait"/></div>
+    <div class="overlay" data-cursor="hover" id="royal" onclick="off('royal')"><img src="img/illustration/final_Fall_24_Drawing_Project.webp" alt="" class="overlayportrait"/></div>
 
 
     <!--Portfolio work-->
@@ -237,7 +238,7 @@
       <section class="portimg1">
         <section class="topportimg">
           <img src="img/illustration/hidden_smiles_S.webp" alt="" class="port_illus" id="top_illus"/>
-          <div class="overlayhover" onclick="on('skull')"> <div></div></div>
+          <div class="overlayhover" data-cursor="hover" onclick="on('skull')"> <div></div></div>
         </section>
       </section>
       <h3 class="porttxtT">Hidden Smiles</h3>
@@ -250,7 +251,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/illustration/drapery_S.webp" alt="" onclick="on('drapery')" class="port_illus"/>
-          <div class="overlayhover2" onclick="on('drapery')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover" onclick="on('drapery')"> <div></div></div>
         </section>
       </section>
       <h3 class="porttxtT">Drapery Study</h3>
@@ -262,7 +263,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/illustration/a_good_boy_S.webp" alt="" class="port_illus"/>
-          <div class="overlayhover2" onclick="on('newman')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover" onclick="on('newman')"> <div></div></div>
         </section>
       </section>
       <h3 class="porttxtT">A Good Boy</h3>
@@ -274,7 +275,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/illustration/at_peace_S.webp" alt="" class="port_illus"/>
-          <div class="overlayhover2" onclick="on('peace')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover" onclick="on('peace')"> <div></div></div>
         </section>
       </section>
       <h3 class="porttxtT">At Peace</h3>
@@ -286,7 +287,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/illustration/journey_S.webp" class="port_illus"/>
-          <div class="overlayhover2" onclick="on('journey')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover" onclick="on('journey')"> <div></div></div>
         </section>
       </section>
       <h3 class="porttxtT">Journey</h3>
@@ -298,7 +299,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/illustration/snow_angel_S.webp" class="port_illus"/>
-          <div class="overlayhover2" onclick="on('snowAngel')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover" onclick="on('snowAngel')"> <div></div></div>
         </section>
       </section>
       <h3 class="porttxtT">Snow Angel</h3>
@@ -310,7 +311,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/illustration/self_port_S.webp" class="port_illus"/>
-          <div class="overlayhover2" onclick="on('self')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover" onclick="on('self')"> <div></div></div>
         </section>
       </section>
       <h3 class="porttxtT">Self Portrait</h3>
@@ -322,7 +323,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/illustration/little_helper_S.webp" class="port_illus"/>
-          <div class="overlayhover2" onclick="on('helper')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover" onclick="on('helper')"> <div></div></div>
         </section>
       </section>
       <h3 class="porttxtT">Little Helper</h3>
@@ -334,7 +335,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/illustration/reflection_S.webp" class="port_illus"/>
-          <div class="overlayhover2" onclick="on('reflection')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover" onclick="on('reflection')"> <div></div></div>
         </section>
       </section>
       <h3 class="porttxtT">Reflection</h3>
@@ -346,7 +347,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/illustration/for_the_road_S.webp" class="land_illus"/>
-          <div class="overlayhover2" onclick="on('road')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover" onclick="on('road')"> <div></div></div>
         </section>
       </section>
       <h3 class="porttxtT">For The Road</h3>
@@ -358,7 +359,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/illustration/red_spy_S.webp" class="port_illus">
-          <div class="overlayhover2" onclick="on('spy')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover" onclick="on('spy')"> <div></div></div>
         </section>
       </section>
       <h3 class="porttxtT">The Red Spy</h3>
@@ -370,7 +371,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/illustration/just_around_the_corner_S.webp" class="port_illus"/>
-          <div class="overlayhover2" onclick="on('corner')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover" onclick="on('corner')"> <div></div></div>
         </section>
       </section>
       <h3 class="porttxtT">Just Around The Corner</h3>
@@ -382,7 +383,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/illustration/distant_fortune_S.webp" class="land_illus"/>
-          <div class="overlayhover2" onclick="on('fortune')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover" onclick="on('fortune')"> <div></div></div>
         </section>
       </section>
       <h3 class="porttxtT">Distant Fortune</h3>
@@ -394,7 +395,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/illustration/rise_img_S.webp" class="port_illus"/>
-          <div class="overlayhover2" onclick="on('rise')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover" onclick="on('rise')"> <div></div></div>
         </section>
       </section>
       <h3 class="porttxtT">Rise</h3>
@@ -408,7 +409,7 @@
       <section class="portfolio">
         <section class="portimg">
           <<img src="img/illustration/hand_study_flo24_S.jpg" class="port_illus"/>
-          <div class="overlayhover2" onclick="on('handstudy')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover" onclick="on('handstudy')"> <div></div></div>
         </section>
       </section>
       <h3 class="porttxtT">Hand Study</h3>
@@ -422,7 +423,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/illustration/dante_flo24_S.jpg" class="port_illus"/>
-          <div class="overlayhover2" onclick="on('dante')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover" onclick="on('dante')"> <div></div></div>
         </section>
       </section>
       <h3 class="porttxtT">Dante</h3>
@@ -436,7 +437,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/illustration/color_figure_study_flo24_S.jpg" class="port_illus"/>
-          <div class="overlayhover2" onclick="on('cfigure')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover" onclick="on('cfigure')"> <div></div></div>
         </section>
       </section>
       <h3 class="porttxtT">Model Figure Study</h3>
@@ -450,7 +451,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/illustration/figure_study_flo24_S.jpg" class="port_illus"/>
-          <div class="overlayhover2" onclick="on('figure')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover" onclick="on('figure')"> <div></div></div>
         </section>
       </section>
       <h3 class="porttxtT">Model Figure Study</h3>
@@ -464,7 +465,7 @@
       <section class="portfolio">
         <section class="portimg">
           <img src="img/illustration/final_Fall_24_Drawing_Project_S.webp" class="land_illus"/>
-          <div class="overlayhover2" onclick="on('royal')"> <div></div></div>
+          <div class="overlayhover2" data-cursor="hover" onclick="on('royal')"> <div></div></div>
         </section>
       </section>
       <h3 class="porttxtT">Royal</h3>
@@ -482,7 +483,7 @@
         <section class="footer">
           <!--Source: https://stackoverflow.com/questions/18813299/changing-image-on-hover-with-css-html by kurdt's -->
           <a href="https://www.linkedin.com/in/colin-dunne/" target="_blank"
-            ><img
+            ><img data-cursor="hover"
               src="img/linkedinlogo.svg"
               onmouseover="this.src='img/activelinkedinlogo.svg';"
               onmouseout="this.src='img/linkedinlogo.svg';"
@@ -490,7 +491,7 @@
               id="linkedInLogo"
           /></a>
           <!--Source: https://www.rapidtables.com/web/html/mailto.html-->
-          <a href="mailto:colindunnester@gmail.com" id="email">colindunnester@gmail.com</a>
+          <a href="mailto:colindunnester@gmail.com" data-cursor="hover" id="email">colindunnester@gmail.com</a>
         </section>
         <section class="footercopyright">
           <p class="footertxtsize">Copyright © 2025 ColinDunne. All Rights Reserved</p>

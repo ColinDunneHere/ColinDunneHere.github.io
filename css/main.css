@@ -7,6 +7,64 @@ https://www.w3schools.com/css/css_grid.asp
 https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b
 */
 
+
+.webProjBody {
+  cursor: none;
+}
+
+#indexBod {
+  cursor: none;
+}
+
+#illusBod {
+  cursor: none;
+}
+
+
+.cursor {
+  width: 2em;
+  height: 2em;
+  background: #987701;
+  position: fixed;
+  border-radius: 100%;
+  pointer-events: none;
+  z-index: 100000;
+  transform: translate(-50%, -50%);
+  /*transition: width 0.2s ease, height 0.2s ease, background 0.2s ease, transform 0.05s linear; */
+  transition: 
+    width 0.2s ease,
+    height 0.2s ease,
+    background 0.2s ease,
+    transform 0.05s linear,
+    opacity 0.3s ease; /* <--- smooth fade */
+}
+
+
+
+.cursor.hover {
+  
+  mix-blend-mode: difference;
+  width: 3.5em;
+  height: 3.5em;
+  background: #e9e0c2;
+  box-shadow: 0 0 20px #e9e0c2, 0 0 40px #e9e0c2;
+  
+  animation: pulse-glow 1s infinite alternate;
+}
+
+/* Cursor pulse keyframes */
+@keyframes pulse-glow {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 0 10px #987701, 0 0 20px #987701, 0 0 30px #ff007a33;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.15);
+    box-shadow: 0 0 20px #987701, 0 0 30px #987701, 0 0 40px #ff007abb;
+  }
+}
+
+
 #dunneHereVid {
   width: 40vw;
 }
@@ -22,7 +80,7 @@ https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+  z-index: 100000; /* Specify a stack order in case you're using a different order for other elements */
   justify-content: center;
   align-items: center;
 }
@@ -35,7 +93,7 @@ https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-
 .webTxt,
 .webTxtT,
 .webTxtD {
-  cursor: pointer;
+  /*cursor: pointer; */
 }
 
 #nohov-webTxt {
@@ -158,12 +216,14 @@ body#illusBod {
 body.grid2 {
   grid-template-columns: minmax(min-content, 167px) 1fr 1fr;
   grid-template-rows: 1fr auto;
+  cursor: none;
 }
 
 body.grid3 {
   grid-template-columns: minmax(min-content, 167px) 1fr auto;
   grid-template-rows: 1fr auto;
   overflow-x: hidden;
+  cursor: none;
 }
 
 html {
@@ -296,6 +356,13 @@ section.one {
   /*z-index: 100; */
 }
 
+.embedimg {
+  display: flex;
+  position: relative;
+  align-self: center;
+  /*z-index: 100; */
+}
+
 .topportimg {
   display: flex;
   position: relative;
@@ -306,6 +373,7 @@ section.one {
 
 .port_illus {
   max-width: 304px;
+  border-radius: 20px;
 }
 
 /*
@@ -317,6 +385,7 @@ section.one {
 .land_illus {
   max-width: 304px;
   max-width: 450px;
+  border-radius: 20px;
 }
 
 .porttxt {
@@ -652,7 +721,8 @@ button.shake {
   text-decoration: none;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  cursor: none;
+  /* cursor: pointer; */
   border: none;
   justify-content: space-between;
   background-color: #987701;
@@ -686,6 +756,7 @@ a {
   font-size: 24px;
   font-weight: 700;
   color: #e9e0c2;
+  cursor: none;
 }
 
 a:hover,
@@ -793,7 +864,7 @@ section.footercopyright {
   width: 100%;
   height: 100%;
   position: absolute;
-  cursor: pointer;
+ /* cursor: pointer; */
 }
 
 .overlayhover2 {
@@ -803,7 +874,7 @@ section.footercopyright {
   width: 100%;
   height: 100%;
   position: absolute;
-  cursor: pointer;
+  /*cursor: pointer; */
 }
 
 @media (pointer: fine) {
@@ -827,7 +898,7 @@ section.footercopyright {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.637); /* Black background with opacity */
   z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
+ /* cursor: pointer; /* Add a pointer on hover */
   justify-content: center;
   align-items: center;
 }
@@ -1045,7 +1116,7 @@ section.footercopyright {
     /*margin-top: 80px; */
     z-index: 100;
     max-width: 80vw;
-    cursor: pointer;
+    /*cursor: pointer; */
   }
 
   .topportimg {
@@ -1497,7 +1568,7 @@ section.footercopyright {
     text-decoration: none;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    /* cursor: pointer; */
     border: none;
     justify-content: space-between;
     background-color: #987701;
